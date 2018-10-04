@@ -1,3 +1,5 @@
+//import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
+
 plugins {
     id 'org.jetbrains.kotlin.jvm' version '1.2.51'
 }
@@ -7,8 +9,14 @@ version '1.0-SNAPSHOT'
 
 repositories {
     mavenCentral()
+    jcenter()
 }
 
 dependencies {
     compile "org.jetbrains.kotlin:kotlin-stdlib"
+    //compile (kotlin("stdlib-jdk10.0.2"))
+    compile ("com.github.kittinunf.fuel:fuel-gson:1.15.0")
+    compile ("com.google.code.gson:gson:2.8.5")
+    compile ("org.postgresql:postgresql:42.2.5")
+    compile ("org.jetbrains.exposed:exposed:0.10.5")
 }
