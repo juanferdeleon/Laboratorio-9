@@ -9,7 +9,7 @@ object Songs: Table(){
     val region= varchar("region", length = 50)
     val artistName = varchar("artistName", length = 50)
     val song = varchar("song", length = 50)
-    val artistGender = varchar("artistName", length = 50)
+    val artistGender = varchar("artistGender", length = 50)
     val groupOrSolo = varchar("groupOrSolo", length = 50)
     val place = varchar("place", length = 50)
     val points = varchar("points", length = 50)
@@ -29,6 +29,5 @@ object Songs: Table(){
     val loudness = varchar("loudness", length = 50)
     val valence = varchar("valance", length = 50)
     val happiness = varchar("happiness", length = 50)
-
 
 }
