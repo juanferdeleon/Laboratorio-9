@@ -2,14 +2,14 @@ package main.dbsongsmodels
 
 import org.jetbrains.exposed.sql.Table
 
-object favSongs: Table(){
+object FavSongs: Table(){
     val id = integer("id").autoIncrement().primaryKey()
     val year = varchar("year", length = 50)
     val country = varchar("country", length = 50)
     val region= varchar("region", length = 50)
     val artistName = varchar("artistName", length = 50)
     val song = varchar("song", length = 50)
-    val artistGender = varchar("artistName", length = 50)
+    val artistGender = varchar("artistGender", length = 50)
     val groupOrSolo = varchar("groupOrSolo", length = 50)
     val place = varchar("place", length = 50)
     val points = varchar("points", length = 50)

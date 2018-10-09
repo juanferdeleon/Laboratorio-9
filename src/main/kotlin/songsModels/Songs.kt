@@ -9,4 +9,34 @@ data class Songs(val year: String, val country: String, val region: String, val 
            return Gson().fromJson(content, Array<Songs>::class.java)
        }
    }
+
+    override fun toString(): String {
+        return """
+            Year: $year
+            Country: $country
+            Region: $region
+            Artist Name: $artistName
+            Song: $song
+            Artist Gender: $artistGender
+            groupOrSolo: $groupOrSolo
+            place: $place
+            points: $points
+            isFinal: $isFinal
+            isSongInEnglish: $isSongInEnglish
+            normalizedPoints: $normalizedPoints
+            energy: $energy
+            duration: $duration
+            acusticness: $acusticness
+            danceability: $danceability
+            tempo: $tempo
+            speechiness: $speechiness
+            key: $key
+            liveness: $liveness
+            timeSignature: $timeSignature
+            mode: $mode
+            loudness: $loudness
+            valence: $valence
+            happiness: $happiness
+        """.trimIndent()
+    }
 }
